@@ -232,3 +232,7 @@ background-image:radial-gradient(circle,rgba(255,255,255,.2) 1px,transparent 1.6
 -webkit-mask-image:radial-gradient(58% 52% at 74% 22%,#000 0%,rgba(0,0,0,.5) 42%,rgba(0,0,0,.14) 78%,rgba(0,0,0,.08) 100%);
 mask-image:radial-gradient(58% 52% at 74% 22%,#000 0%,rgba(0,0,0,.5) 42%,rgba(0,0,0,.14) 78%,rgba(0,0,0,.08) 100%)}
 @media (max-width:720px){body::before{background-size:18px 18px;-webkit-mask-image:radial-gradient(90% 45% at 70% 12%,#000 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.1) 100%);mask-image:radial-gradient(90% 45% at 70% 12%,#000 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.1) 100%)}}
+.founder{background:#0f1011;border:1px solid var(--line);border-radius:12px;padding:24px}
+.founder .fname{color:var(--white);font-size:20px;font-weight:500;margin:0}
+.founder .ftitle{color:var(--muted);font-size:13px;font-family:var(--mono);margin:4px 0 16px}
+.founder .rows{margin-top:16px}
