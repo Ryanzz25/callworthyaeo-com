@@ -236,3 +236,30 @@ mask-image:radial-gradient(58% 52% at 74% 22%,#000 0%,rgba(0,0,0,.5) 42%,rgba(0,
 .founder .fname{color:var(--white);font-size:20px;font-weight:500;margin:0}
 .founder .ftitle{color:var(--muted);font-size:13px;font-family:var(--mono);margin:4px 0 16px}
 .founder .rows{margin-top:16px}
+/* hero with form */
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:center}
+.hero-grid h1{font-size:clamp(36px,5vw,60px)}
+.chips{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font:400 13px/1 var(--mono);color:var(--body);border:1px solid var(--line);border-radius:9999px;padding:8px 12px;background:rgba(255,255,255,.02)}
+.chips li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:8px;vertical-align:1px}
+.hero-alt{margin:24px 0 0;color:var(--muted);font-size:14px}
+.hero-alt a{color:var(--body)}
+.lead-form.compact{grid-template-columns:1fr 1fr;gap:14px;padding:22px;box-shadow:0 0 0 1px rgba(228,242,34,.06),0 24px 60px rgba(0,0,0,.45)}
+.lead-form.compact .full,.lead-form.compact .ftop{grid-column:1/-1}
+.ftitle2{margin:0;color:var(--white);font-size:19px;font-weight:500}
+.fsub{margin:4px 0 0;color:var(--muted);font-size:14px}
+.list2{display:grid;grid-template-columns:1fr 1fr;gap:24px 32px}
+.list2 h3{font-size:16px;margin-bottom:6px}
+.list2 p{margin:0;color:var(--muted);font-size:15px}
+.col .stage{margin-top:32px}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fit-col{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.fit-col h3{font-size:16px;margin-bottom:12px}
+.fit-col ul{list-style:none;margin:0;padding:0}
+.fit-col li{padding:10px 0 10px 26px;border-top:1px solid var(--line);position:relative;color:var(--body)}
+.fit-col li::before{position:absolute;left:0;top:10px;font-weight:600}
+.fit-col.yes li::before{content:"\2713";color:var(--lime)}
+.fit-col.no li::before{content:"\2715";color:var(--coral)}
+@media (max-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:32px}}
+@media (max-width:600px){.lead-form.compact,.list2,.fit{grid-template-columns:minmax(0,1fr)}}
+.list2 .item{border-top:1px solid var(--line);padding:18px 0 0}
